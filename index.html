@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TestTitleExpert</title>
+
+    <style>
+        .mobile-menu {
+            display: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/normalize.min.css"/>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+</head>
+<body>
+    <section class="header container">
+        <div class="content">
+            <header class="header-menu">
+                <div class="header-menu-section">
+                    <div class="mobile-menu">
+                        <i class="fas fa-times mobile-menu-close-btn"></i>
+                        <nav class="mobile-menu-item">
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Ссылки</a>
+                            </div>
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Контакты</a>
+                            </div>
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Теги</a>
+                            </div>
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Просьбы</a>
+                            </div>
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Избранное</a>
+                            </div>
+                            <div class="mobile-menu-nav-item">
+                                <a href="/" class="mobile-menu-item-link">Посещения</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <i class="fas fa-bars mobile-menu-bars" onclick="mobileMenu()"></i>
+                    <div class="header-logo">
+                        <img src="img/Logo.png" alt="Title.Expert logo" class="logo">
+                        <img src="img/logo-arrow.png" alt="logo-arrow" class="logo-arrow">
+                    </div>
+                    <div class="nav-menu-section">
+                        <nav class="nav-menu">
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Ссылки<i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Контакты</a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Теги<i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Просьбы<i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Избранное<i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="/" class="nav-item-link">Посещения<i class="fas fa-sort-down"></i></a>
+                            </div>
+                            <button class="btn-header btn-search" onclick="toggleMenu()"><i class="fas fa-search"></i></button>
+                        </nav>
+                        <div class="search-section">
+                            <div class="search">
+                                <i class="fas fa-search"></i>
+                                <input class="search-input" type="search">
+                                <button class="search-btn">Найти</button>
+                            </div>
+                            <div class="window-filter-container">
+                                <div class="window-filter">
+                                    <div class="input-window-filter">
+                                        <input id="checkbox-my" class="input-filter-checkbox" type="checkbox">
+                                        <label for="checkbox-my" class="checkbox-label">мои</label>
+                                        <input class="input-filter" type="text" placeholder="Автор">
+                                    </div>
+                                    <div class="select category-select">
+                                        <p class="select-header">Сортировать по:</p>
+                                        <div class="select-header category-select-header">
+                                            <span class="select-current"></span>
+                                            <span class="select-default">Дате</span>
+                                            <div class="select-icon category-select-icon">&#9660;</div>
+                                        </div>
+                                        <div class="select-body category-select-body">
+                                            <div class="select-item category-select-item">Автору</div>
+                                            <div class="select-item category-select-item">Стилю</div>
+                                            <div class="select-item category-select-item">Страницам</div>
+                                            <div class="select-item category-select-item">Важности</div>
+                                            <div class="select-item category-select-item">Отзывам</div>
+                                        </div>
+                                    </div>
+                                    <div class="input-form-select">
+                                        <input id="checkbox-participant" class="input-checkbox" type="checkbox">
+                                        <label for="checkbox-participant" class="checkbox-label">я учасник</label>
+                                        <input id="checkbox-in-title" class="input-checkbox" type="checkbox">
+                                        <label for="checkbox-in-title" class="checkbox-label">в заголовке</label>
+                                        <input id="checkbox-search" class="input-checkbox" type="checkbox">
+                                        <label for="checkbox-search" class="checkbox-label">строгий поиск</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-header btn-plus"><i class="fas fa-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div class="header-user-menu">
+                    <button class="btn-header btn-mailbox"><i class="far fa-envelope"></i></button>
+                    <button class="btn-header btn-notification"><i class="far fa-bell"></i></button>
+                    <button class="btn-header btn-user">
+                        <img src="img/user.jpg" alt="user-photo" class="user-photo">
+                    </button>
+                </div>
+            </header>
+        </div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
